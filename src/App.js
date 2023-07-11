@@ -27,6 +27,10 @@ function App() {
     btn.classList.add("modal__btn");
     section.appendChild(btn)
     btn.innerHTML = "Close";
+
+    btn.onclick = function(){
+      section.outerHTML = ""
+    };
   }
 
   useEffect(() => {
