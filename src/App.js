@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss'
 import axios from 'axios';
-import ReactDOM from 'react-dom';
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
     section.classList.add("modal");
     var img = document.createElement("img");
     img.classList.add("modal__img");
-    
+
     img.src = (url);
     section.appendChild(img)
 
@@ -27,6 +26,7 @@ function App() {
     btn.classList.add("modal__btn");
     section.appendChild(btn)
     btn.innerHTML = "Close";
+    btn.focus() 
 
     btn.onclick = function(){
       section.outerHTML = ""
