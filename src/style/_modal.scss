@@ -1,10 +1,12 @@
+@import 'colours';
+
 .modal {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   top: 0;
-  background: #FBE5BE;
+  background: $colour-primary;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -13,8 +15,11 @@
   .modal__img {
       width: 400px;
       height: 400px;
+      border-radius: 20px;
   }
 
   .modal__btn {
-      padding: 10px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
   }

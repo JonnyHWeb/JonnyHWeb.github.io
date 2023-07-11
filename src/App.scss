@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @import 'style/modal';
 
+* {
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Goudy Bookletter 1911', serif;
 }
 
   .card {
     position: relative;
-    border: 4px solid #533332;
+    border: 4px solid $colour-secondary;
     border-radius: 2px;
     list-style: none;
     height: auto;
@@ -18,7 +21,7 @@
     overflow: hidden;
     padding: 5px;  
     text-align: center;
-    background-color: #FBE5BE;
+    background-color: $colour-primary;
 
     &:nth-child(even) {
       .card__page-number {
@@ -33,7 +36,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    color: #533332;
+    color: $colour-secondary;
   }
 
   .card__title {
