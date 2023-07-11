@@ -44,17 +44,20 @@ function App() {
   }, []);
 
   return (
-    <ul className="cards">
-      {photos.map(photo => (
-        <li className="card" key={photo.id}>
-          <a className="card__link" href="#" onClick={displayModal.bind(this, photo.url)}>
-            <img className="card__img" src={photo.thumbnailUrl} alt={photo.title} loading="lazy"></img>
-            <h2 className="card__title">{photo.title}</h2> 
-            <span className="card__page-number">{photo.id}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <><h1>The Book of Lorem Ipsum</h1>
+    <p>Click a page to view photo</p>
+      <ul className="cards">
+        {photos.map(photo => (
+          <li className="card" key={photo.id}>
+            <a className="card__link" href="#" onClick={displayModal.bind(this, photo.url)}>
+              <img className="card__img" src={photo.thumbnailUrl} alt={photo.title} loading="lazy"></img>
+              <h2 className="card__title">{photo.title}</h2>
+              <span className="card__page-number">{photo.id}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
